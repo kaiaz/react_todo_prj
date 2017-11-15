@@ -4,9 +4,9 @@ import './../index.css';
 class Field extends React.Component {
     render() {
         return(
-            <div>
+
                 <input type="text" className="taskField"/>
-            </div>
+
         )
     }
 }

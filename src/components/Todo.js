@@ -14,9 +14,9 @@ class Todo extends React.Component {
                  <Button/>
              </div>
              <section className='tasks'>
-                 <div className="task">Task1</div>
-                 <div className="task">Task2</div>
-                 <div className="task">Task3</div>
+                 <div className="task">Купить продукты</div>
+                 <div className="task">Купить продукты</div>
+                 <div className="task">Купить продукты</div>
              </section>
          </div>
         );
