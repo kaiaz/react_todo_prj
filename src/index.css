@@ -36,12 +36,12 @@ body {
   padding: 0px 20px;
   font-size: 20px;
   width: 84%;
-  margin-right: 1%;
+
   display: inline-block;
   border: 1px solid  darkgreen;
 }
 
-.addTask {
+.btn {
   display: inline-block;
   width: 15%;
   font-size: 20px;
@@ -49,6 +49,7 @@ body {
   background: forestgreen;
   color: #ffffff;
   border: none;
+  margin-left: 1%;
 }
 
 .task {
@@ -58,3 +59,8 @@ body {
 
 }
 
+
+.task-text {
+  display: inline-block;
+  width: 68%;
+}

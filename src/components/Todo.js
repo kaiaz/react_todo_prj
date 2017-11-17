@@ -1,5 +1,6 @@
 import React from 'react';
 import './../index.css';
+import Task from './Task';
 import Button from './Button';
 import Field from './Field';
 
@@ -14,9 +15,9 @@ class Todo extends React.Component {
                  <Button/>
              </div>
              <section className='tasks'>
-                 <div className="task">Купить продукты</div>
-                 <div className="task">Купить продукты</div>
-                 <div className="task">Купить продукты</div>
+                <Task/>
+                <Task/>
+                <Task/>
              </section>
          </div>
         );

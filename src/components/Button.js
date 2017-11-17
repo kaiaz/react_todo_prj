@@ -5,7 +5,7 @@ class Button extends React.Component {
     render() {
         return (
 
-                <button className="addTask">Добавить</button>
+                <button className="btn">Добавить</button>
 
         );
     }
