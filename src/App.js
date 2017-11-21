@@ -1,15 +1,25 @@
 import React, { Component } from 'react';
 import Todo from './components/Todo';
 import './App.css';
+import Field from './components/Field';
 
-class App extends Component {
-  render() {
+function App(props) {
+
+
     return (
       <div className="App">
-        <Todo/>
+        <h1 className='mainTitle'>To-Do List</h1>
+        <div className="panel">
+          <Field/>
+        </div>
+          {props.todos.map(todo => <Todo
+                   title={todo.title}
+                   id = {todo.id}
+                   key = {todo.id}
+            />)}
       </div>
     );
-  }
+
 }
 
 export default App;
