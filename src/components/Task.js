@@ -7,8 +7,8 @@ class Task extends React.Component {
         return(
            <section className='task'>
                <p className='task-text'>Купить продукты</p>
-               <Button>Редактировать</Button>
-               <Button>Удалить</Button>
+            <Button name='Edit'/>
+            <Button name='Delete'/>
            </section>
         );
     }

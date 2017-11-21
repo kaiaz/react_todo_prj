@@ -1,14 +1,13 @@
 import React from 'react';
 import './../index.css';
 
-class Button extends React.Component {
-    render() {
-        return (
+function Button(props) {
 
-                <button className="btn">Добавить</button>
+    return (
+        <button className="btn">{props.name}</button>
 
-        );
-    }
+    );
+
 }
 
 export default Button;

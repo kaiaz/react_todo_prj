@@ -1,14 +1,18 @@
 import React from 'react';
 import './../index.css';
+import Button from './Button';
 
-class Field extends React.Component {
-    render() {
-        return(
+function Field(props) {
 
-                <input type="text" className="taskField"/>
+    return(
 
-        )
-    }
+        <form>
+            <input type="text" className="taskField"/>
+            <Button name='Add'/>
+        </form>
+
+    )
+
 }
 
 export default Field;
