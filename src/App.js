@@ -20,12 +20,16 @@ class App extends React.Component {
         alert('edit');
     }
 
-    handleDelete() {
-        alert('delete');
+    handleDelete(id) {
+        let todos = this.state.todos.filter( todo => todo.id !== id );
+
+        this.setState({ todos });
+
+
     }
 
-    handleAdd() {
-        alert('Add');
+    handleAdd(e) {
+
     }
 
     render() {

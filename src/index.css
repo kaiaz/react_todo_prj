@@ -9,13 +9,12 @@ body {
 }
 
 .App {
-  min-width: 600px;
-  max-width: 1000px;
+  width: 700px;
   margin: 0 auto;
   background: #f2edd2;
   margin-top: 45px;
   border: 1px solid sandybrown;
-  padding: 20px;
+  padding: 40px;
 }
 
 .mainTitle {
@@ -24,11 +23,14 @@ body {
   color: forestgreen;
   margin: 0;
   padding-bottom: 20px;
+  font-weight: 800;
+  font-size: 36px;
 }
 
 .panel {
-  margin-bottom: 30px;
+  padding: 20px 0px;
   font-size: 20px;
+
 }
 
 .taskField {
@@ -46,7 +48,7 @@ body {
   display: inline-block;
   width: 15%;
   font-size: 20px;
-  padding: 9px 10px;
+  padding: 9px 15px;
   background: forestgreen;
   color: #ffffff;
   border: none;
@@ -71,8 +73,8 @@ body {
 .task {
   padding: 10px 0px;
   color: darkgreen;
-  font-size: 20px;
-
+  font-size: 26px;
+  font-weight: 800;
 }
 
 
@@ -82,5 +84,5 @@ body {
 }
 
 .panel {
-  padding: 20px 0;
+
 }
