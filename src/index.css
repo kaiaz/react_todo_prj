@@ -12,9 +12,9 @@ body {
   min-width: 600px;
   max-width: 1000px;
   margin: 0 auto;
-  background: lightgrey;
+  background: #f2edd2;
   margin-top: 45px;
-  border: 1px solid darkslategrey;
+  border: 1px solid sandybrown;
   padding: 20px;
 }
 
@@ -36,9 +36,10 @@ body {
   padding: 0px 20px;
   font-size: 20px;
   width: 84%;
+  background: #fff;
 
   display: inline-block;
-  border: 1px solid  darkgreen;
+  border: 1px solid sandybrown;
 }
 
 .btn {
@@ -50,8 +51,22 @@ body {
   color: #ffffff;
   border: none;
   margin-left: 1%;
-
+  cursor: pointer;
 }
+
+.btn-edit {
+  background: lightseagreen;
+}
+
+.btn-delete {
+  background: lightcoral;
+}
+
+.btn-add {
+  background: darkolivegreen;
+}
+
+
 
 .task {
   padding: 10px 0px;
@@ -64,4 +79,8 @@ body {
 .task-text {
   display: inline-block;
   width: 68%;
+}
+
+.panel {
+  padding: 20px 0;
 }
