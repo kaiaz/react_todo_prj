@@ -44,6 +44,11 @@ body {
   border: 1px solid sandybrown;
 }
 
+.taskField-save {
+  border-color: mediumpurple;
+  margin: 20px 0px;
+}
+
 .btn {
   display: inline-block;
   width: 15%;
@@ -65,10 +70,12 @@ body {
 }
 
 .btn-add {
-  background: darkolivegreen;
+  background: sandybrown;
 }
 
-
+.btn-save{
+  background: mediumpurple;
+}
 
 .task {
   padding: 10px 0px;
@@ -83,6 +90,3 @@ body {
   width: 68%;
 }
 
-.panel {
-
-}

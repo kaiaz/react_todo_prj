@@ -14,10 +14,26 @@ class App extends React.Component {
         this.handleDelete = this.handleDelete.bind(this);
         this.handleChange = this.handleChange.bind(this);
         this.handleAdd = this.handleAdd.bind(this);
+        this.handleEdit = this.handleEdit.bind(this);
+
     }
 
-    handleChange() {
-        alert('edit');
+   nextId() {
+        this._nextId = this._nextId || 4;
+         return this._nextId ++;
+   }
+
+    handleChange(id, title) {
+
+        let todos = this.state.todos.map( todo => {
+            if(todo.id === id) {
+                todo.title = title
+            }
+            return todo;
+        });
+        this.setState({
+            todos: todos
+        })
     }
 
     handleDelete(id) {
@@ -28,8 +44,25 @@ class App extends React.Component {
 
     }
 
-    handleAdd(e) {
+    handleAdd(title) {
+        let todo = {
+            id: this.nextId(),
+            title
+        };
 
+        let todos = [...this.state.todos, todo];
+
+        this.setState({ todos})
+    }
+
+    handleEdit(id, title) {
+        let todos = this.state.todos.map(todo => {
+                if(todo.id === id) {
+                    todo.title = title
+                }
+                return todo;
+            });
+        this.setState({todos})
     }
 
     render() {
@@ -43,10 +76,10 @@ class App extends React.Component {
                     key = {todo.id}
                     onDelete = {this.handleDelete}
                     onChange = {this.handleChange}
-                    onAdd = {this.handleAdd}
+                    onEdit = {this.handleEdit}
                 />)}
                 <div className="panel">
-                    <Field/>
+                    <Field onAdd = {this.handleAdd}/>
                 </div>
             </div>
         );
