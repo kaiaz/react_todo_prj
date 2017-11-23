@@ -70,17 +70,20 @@ class App extends React.Component {
             <div className="App">
                 <h1 className='mainTitle'>React Todo</h1>
 
-                {this.state.todos.map(todo => <Todo
-                    title={todo.title}
-                    id = {todo.id}
-                    key = {todo.id}
-                    onDelete = {this.handleDelete}
-                    onChange = {this.handleChange}
-                    onEdit = {this.handleEdit}
-                />)}
-                <div className="panel">
-                    <Field onAdd = {this.handleAdd}/>
-                </div>
+                <main className="tasks">
+                    {this.state.todos.map(todo => <Todo
+                        title={todo.title}
+                        id = {todo.id}
+                        key = {todo.id}
+                        onDelete = {this.handleDelete}
+                        onChange = {this.handleChange}
+                        onEdit = {this.handleEdit}
+                    />)}
+                    <div className="panel">
+                        <Field onAdd = {this.handleAdd}/>
+                    </div>
+                </main>
+
             </div>
         );
     }

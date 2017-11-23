@@ -30,6 +30,7 @@ class Todo extends React.Component {
     renderDisplay() {
         return(
             <section className='task'>
+
                 <p className='task-text'>{this.props.title}</p>
                 <Button name='Edit' className='btn btn-edit' onClick={() => this.setState({editing: true})}/>
                 <Button name='Delete' className='btn btn-delete' onClick={ () => this.props.onDelete(this.props.id)}/>

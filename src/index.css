@@ -13,24 +13,33 @@ body {
   margin: 0 auto;
   background: #f2edd2;
   margin-top: 45px;
-  border: 1px solid sandybrown;
-  padding: 40px;
+
 }
 
 .mainTitle {
   text-align: center;
   text-transform: uppercase;
-  color: forestgreen;
+  color: #fff;
+  background: mediumpurple;
   margin: 0;
-  padding-bottom: 20px;
+  padding: 30px 10px;
   font-weight: 800;
   font-size: 36px;
 }
 
-.panel {
-  padding: 20px 0px;
-  font-size: 20px;
+.tasks {
+  border: 1px solid sandybrown;
+  border-top: none;
+}
 
+
+.panel {
+  padding: 20px 15px;
+  font-size: 20px;
+}
+
+.todo-edit-form {
+  padding: 0px 15px;
 }
 
 .taskField {
@@ -78,15 +87,16 @@ body {
 }
 
 .task {
-  padding: 10px 0px;
+  padding: 10px 15px;
   color: darkgreen;
-  font-size: 26px;
-  font-weight: 800;
+  font-size: 21px;
+
 }
 
 
 .task-text {
   display: inline-block;
-  width: 68%;
+  width: 66%;
+  margin-left: 2%;
 }
 
