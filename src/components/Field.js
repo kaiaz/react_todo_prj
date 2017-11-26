@@ -2,6 +2,7 @@ import React from 'react';
 import './../index.css';
 import Button from './Button';
 
+
 class Field extends React.Component {
     constructor(props) {
         super(props);
@@ -9,6 +10,8 @@ class Field extends React.Component {
         this.state = {
             title: ''
         };
+
+        this.store = this.props.store;
 
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleChange = this.handleChange.bind(this);
@@ -20,8 +23,8 @@ class Field extends React.Component {
        let title = this.state.title;
 
         if(title) {
-           this.props.onAdd(title);
-           this.setState({
+          this.props.onAdd(title);
+            this.setState({
                title: ''
            })
         }
