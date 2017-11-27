@@ -1,28 +1,14 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import Field from '../components/Field';
 import { addTodo } from ".././actions/index";
 
 
-class FieldContainer extends React.Component {
-    constructor(props) {
-        super(props);
-
-
-        this.store = this.props.store;
-
-        this.handleAdd = this.handleAdd.bind(this);
-
-    }
-
-    handleAdd(title) {
-        this.store.dispatch(addTodo(title));
-    }
-
-    render() {
-        return (
-           <Field onAdd ={this.handleAdd}/>
-        )
-    }
+function mapDispatchToProps(dispatch) {
+    return {
+        onAdd: title => dispatch(addTodo(title))
+    };
 }
 
+const FieldContainer = connect(null, mapDispatchToProps)(Field);
 export default FieldContainer;
